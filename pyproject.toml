@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-deep-research-mcp"
+version = "1.0.0"
+description = "MCP server for Azure AI Foundry Deep Research integration"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Azure Deep Research MCP Contributors"},
+]
+dependencies = [
+    "mcp[cli]",
+    "azure-ai-projects>=1.0.0b12",
+    "azure-identity",
+    "aiohttp",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "python-dotenv",
+]
+
+[project.scripts]
+deep-research-mcp = "deep_research_server:main"
+
+[tool.setuptools]
+py-modules = ["deep_research_server"]

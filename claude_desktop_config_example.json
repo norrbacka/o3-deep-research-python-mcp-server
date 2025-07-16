@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "Azure Deep Research": {
+      "command": "mcp",
+      "args": [
+        "run",
+        "/home/norrbacka/repos/o3-deep-research-python-mcp-server/deep_research_server.py"
+      ],
+      "cwd": "/home/norrbacka/repos/o3-deep-research-python-mcp-server"
+    }
+  }
+}

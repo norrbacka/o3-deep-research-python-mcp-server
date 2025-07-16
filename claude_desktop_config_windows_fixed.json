@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "Azure Deep Research": {
+      "command": "wsl.exe",
+      "args": [
+        "-e",
+        "/home/norrbacka/repos/o3-deep-research-python-mcp-server/run_server.sh"
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mcp[cli]
+azure-ai-projects>=1.0.0b12
+azure-identity
+aiohttp
+# Explicit azure dependencies to avoid conflicts
+azure-ai-agents>=1.0.2
+azure-core>=1.35.0

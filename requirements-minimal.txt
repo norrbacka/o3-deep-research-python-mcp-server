@@ -1,0 +1,8 @@
+# Minimal requirements that should work with Python 3.13t
+mcp
+aiohttp
+python-dotenv
+
+# Azure packages - install separately if cryptography fails
+# azure-ai-projects>=1.0.0b12
+# azure-identity
