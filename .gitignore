@@ -1,5 +1,16 @@
 # Environment variables
 .env
+.env.local
+.env.*.local
+
+# Research outputs
+research_summaries/
+
+# Temporary files
+.temp/
+
+# Development tools
+.tool-versions
 
 # Python
 __pycache__/
@@ -9,16 +20,30 @@ __pycache__/
 .Python
 venv/
 env/
-
-# Research output
-research_summaries/
+ENV/
+.venv
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution
+dist/
+build/
+*.egg-info/

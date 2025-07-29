@@ -1,12 +1,16 @@
 {
   "mcpServers": {
     "Azure Deep Research": {
-      "command": "mcp",
+      "command": "python",
       "args": [
-        "run",
-        "/home/norrbacka/repos/o3-deep-research-python-mcp-server/deep_research_server.py"
+        "/path/to/o3-deep-research-python-mcp-server/deep_research_server.py"
       ],
-      "cwd": "/home/norrbacka/repos/o3-deep-research-python-mcp-server"
+      "env": {
+        "PROJECT_ENDPOINT": "https://your-project.services.ai.azure.com/api/projects/your-project",
+        "BING_RESOURCE_NAME": "your-bing-resource",
+        "DEEP_RESEARCH_MODEL_DEPLOYMENT_NAME": "o3-deep-research",
+        "MODEL_DEPLOYMENT_NAME": "gpt-4o"
+      }
     }
   }
 }
